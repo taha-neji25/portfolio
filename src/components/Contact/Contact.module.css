@@ -1,0 +1,146 @@
+/* Contact.module.css */
+.contactContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .sectionTitle {
+    margin: 2em;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+    color: var(--text);
+    position: relative;
+  }
+  .sectionTitle::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--primary);
+    margin: 1rem 0;
+    border-radius: var(--rounded-full);
+  }
+  
+  .contactInfo {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .infoTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .infoText {
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+  
+  .infoItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .infoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border-radius: var(--rounded-full);
+    font-size: 1.25rem;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .socialLink {
+    color: var(--primary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .socialLink:hover {
+    color: var(--primary-dark);
+  }
+  
+  .contactForm {
+    margin-right: 2em;
+    background-color: var(--background);
+    padding: 2rem;
+    border-radius: var(--rounded-lg);
+    box-shadow: var(--shadow);
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--rounded);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .formGroup textarea {
+    min-height: 10rem;
+    resize: vertical;
+  }
+  .submitBtn {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+    
+  .cta {
+    display: flex;
+    gap: 20px;
+    border: none;
+  }
+  
+  @media (max-width: 1024px) {
+    .contactContent {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }

@@ -1,0 +1,68 @@
+.skills {
+    margin: 2em;
+    background-color: var(--background);
+  }
+  .sectionTitle {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+    color: var(--text);
+    position: relative;
+  }
+  .sectionTitle::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--primary);
+    margin: 1rem 0;
+    border-radius: var(--rounded-full);
+  }
+  
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .skillItem {
+    background-color: var(--background-alt);
+    padding: 1.5rem;
+    border-radius: var(--rounded);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .skillInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+  
+  .skillName {
+    font-weight: 500;
+  }
+  
+  .skillPercent {
+    color: var(--primary);
+    font-weight: 600;
+  }
+  
+  .skillBar {
+    height: 0.5rem;
+    background-color: var(--border);
+    border-radius: var(--rounded-full);
+    overflow: hidden;
+  }
+  
+  .skillProgress {
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: var(--rounded-full);
+    transition: width 1s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .skillsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
